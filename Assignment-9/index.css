@@ -1,1 +1,176 @@
-
+/* General Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, rgba(78, 196, 97, 0.7), rgba(51, 2, 9, 0.7));
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-attachment: fixed;
+    color: #fff;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    color: #444;
+  }
+  
+  /* Header Section */
+  header {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.7);
+    animation: glowingText 1.5s ease-in-out infinite alternate;
+  }
+  
+  /* Services Section */
+  #services {
+    padding: 40px 10px;
+    text-align: center;
+  }
+  
+  #services ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 20px 0;
+  }
+  
+  #services li {
+    font-size: 1.5rem;
+  }
+  
+  button.book-appointment {
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  button.book-appointment:hover {
+    background-color: #45a049;
+    transform: translateY(-5px);
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    color: #333;
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .close-btn {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  /* Form Styles */
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .form input,
+  .form select,
+  .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Error Messages */
+  .error {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: -10px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-color: #000000;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #000000;
+    color: white;
+  }
+  
+  td {
+    background-color: #ecf0f1;
+    color: black
+  }
